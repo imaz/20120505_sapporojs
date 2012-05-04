@@ -1,0 +1,91 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <base target="new">
+  <link rel="stylesheet" href="./core/deck.core.css">
+  <link rel="stylesheet" href="./extensions/goto/deck.goto.css">
+  <link rel="stylesheet" href="./extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="./extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="./extensions/status/deck.status.css">
+  <link rel="stylesheet" href="./extensions/hash/deck.hash.css">
+  <link rel="stylesheet" href="./extensions/scale/deck.scale.css">
+  
+  <link rel="stylesheet" href="./themes/style/neon.css">
+  <link rel="stylesheet" href="./themes/transition/fade.css">
+  <script src="./modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+  <section class="slide" id="title">
+    <h1>ぬるjs<br><font style="font-size:50px">node-fiveであそんでみたお！</font></h1>
+  </section>
+
+  <section class="slide" id="what-is-node-five">
+    <h2>node-five！！</h2>
+    <ul>
+      <li class="slide">
+        <h3>node-fiveってなに？</h3>
+        <p><a href="https://github.com/arturadib/node-five">https://github.com/arturadib/node-five</a></p>
+        <p>node-qtをあたかもHTML5で書いているように実装できるライブラリ</p>
+      </li>
+      <li class="slide">
+        <h3>node-qtってなに…？</h3>
+        <p class="slide">qtをNode.jsで実装できるライブラリ</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide" id="how-to-overview">
+    <h2>How to Make a Deck</h2>
+    <ol>
+      <li>
+        <h3>Write Slides</h3>
+        <p>Slide content is simple HTML.</p>
+        <p><input type="button" value="ぼたん！"></p>
+      </li>
+      <li>
+        <h3>Choose Themes</h3>
+        <p>One for slide styles and one for deck transitions.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- deck.navigation snippet -->
+  <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+  <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+  <!-- deck.status snippet -->
+  <p class="deck-status">
+  <span class="deck-status-current"></span>
+  /
+  <span class="deck-status-total"></span>
+  </p>
+  <!-- deck.goto snippet -->
+  <form action="." method="get" class="goto-form">
+    <label for="goto-slide">Go to slide:</label>
+    <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+    <datalist id="goto-datalist"></datalist>
+    <input type="submit" value="Go">
+  </form>
+  <!-- deck.hash snippet -->
+  <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+  <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="./jquery-1.7.min.js"><\/script>')</script>
+  <!-- Deck Core and extensions -->
+  <script src="./core/deck.core.js"></script>
+  <script src="./extensions/hash/deck.hash.js"></script>
+  <script src="./extensions/menu/deck.menu.js"></script>
+  <script src="./extensions/goto/deck.goto.js"></script>
+  <script src="./extensions/status/deck.status.js"></script>
+  <script src="./extensions/navigation/deck.navigation.js"></script>
+  <script src="./extensions/scale/deck.scale.js"></script>
+  <!-- Initialize the deck -->
+  <script>
+    $(function() {
+      $.deck('.slide');
+    });
+  </script>
+</body>
+
+</html>
