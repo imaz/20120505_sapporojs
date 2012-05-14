@@ -1,0 +1,123 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <base target="new">
+  <link rel="stylesheet" href="./deck.js/core/deck.core.css">
+  <link rel="stylesheet" href="./deck.js/extensions/goto/deck.goto.css">
+  <link rel="stylesheet" href="./deck.js/extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="./deck.js/extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="./deck.js/extensions/status/deck.status.css">
+  <link rel="stylesheet" href="./deck.js/extensions/hash/deck.hash.css">
+  <link rel="stylesheet" href="./deck.js/extensions/scale/deck.scale.css">
+  
+  <link rel="stylesheet" href="./deck.js/themes/style/neon.css">
+  <link rel="stylesheet" href="./deck.js/themes/transition/fade.css">
+  <script src="./deck.js/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+  <section class="slide">
+  <h1>ぬるjs<br><font class="slide" style="color:#8cf;font-size:50px"><a href="https://www.google.co.jp/search?sourceid=chrome&ie=UTF-8&q=%E3%81%ACRuby">ぬRuby</a>からきますた！</font></h1>
+  </section>
+
+  <section class="slide">
+    <h1>ぬるjs<br><font style="color:#8cf;font-size:50px">node-fiveであそんでみたお！</font></h1>
+  </section>
+
+  <section class="slide">
+    <h2>node-five</h2>
+    <h3>node-fiveってなに？</h3>
+    <ul>
+      <li class="slide">簡単にcanvas描画して</li>
+      <li class="slide">デスクトップアプリを作れてしまう</li>
+      <li class="slide">node.jsのライブラリ！</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h2>node-five</h2>
+    <h3>もっとくわしく <font style="font-size:25px;color:#fcf">(੭ु ˃̶͈̀ 3 ˂̶͈́)੭ु⁾⁾</font></h3>
+    <ul>
+      <li class="slide">
+        <a href="http://qt.nokia.com/">http://qt.nokia.com/</a>
+        <br>クロスプラットフォームのGUIライブラリ Qt の
+      </li>
+      <li class="slide">
+        <a href="https://github.com/arturadib/node-qt">https://github.com/arturadib/node-qt</a>
+        <br>node.js wrapper を
+      </li>
+      <li class="slide">
+        <a href="https://github.com/arturadib/node-five">https://github.com/arturadib/node-five</a>
+        <br>あたかもHTML5で書いているように実装できるようにしたライブラリ!!
+      </li>
+    </ul>
+    <a href="https://twitter.com/intent/tweet?button_hashtag=sapporojs&text=%5BQt%5D%20http%3A%2F%2Fqt.nokia.com%2F%20%20%20%5Bnode-qt%5D%20https%3A%2F%2Fgithub.com%2Farturadib%2Fnode-qt%20%20%20%5Bnode-five%5D%20https%3A%2F%2Fgithub.com%2Farturadib%2Fnode-five%20%20%23sapporojs" class="slide" data-lang="fa" data-size="large">Tweet #sapporojs</a>
+  </section>
+
+  <section class="slide">
+    <h2>How to use node-five</h2>
+    <ol>
+      <li>
+        <p><a href="https://gist.github.com/2568204">https://gist.github.com/2568204</a></p>
+        <p>node.jsのv0.6.14以上をインストールする</p>
+        <p>Qtとnode-qtをインストールする</p>
+      </li>
+      <li class="slide">
+        <p><a href="https://github.com/arturadib/node-five">https://github.com/arturadib/node-five</a></p>
+        <p>Getting started みる！</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="slide">
+  <h1><p style="font-size:50px">(੭ु ˃̶͈̀ 3 ˂̶͈́)੭ु⁾⁾ demo!!</p></h1>
+  </section>
+
+  <section class="slide">
+    <h2>hubble-bubble</h2>
+    <ul>
+      <li><a href="https://github.com/imaz/enjoy-node5">https://github.com/imaz/enjoy-node5</a></li>
+      <li>bubble.js</li>
+      <li>ぶくぶくします！</li>
+    </ul>
+  </section>
+
+  <!-- deck.navigation snippet -->
+  <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+  <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+  <!-- deck.status snippet -->
+  <p class="deck-status">
+  <span class="deck-status-current"></span>
+  /
+  <span class="deck-status-total"></span>
+  </p>
+  <!-- deck.goto snippet -->
+  <form action="." method="get" class="goto-form">
+    <label for="goto-slide">Go to slide:</label>
+    <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+    <datalist id="goto-datalist"></datalist>
+    <input type="submit" value="Go">
+  </form>
+  <!-- deck.hash snippet -->
+  <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+  <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="./deck.js/jquery-1.7.min.js"><\/script>')</script>
+  <!-- Deck Core and extensions -->
+  <script src="./deck.js/core/deck.core.js"></script>
+  <script src="./deck.js/extensions/hash/deck.hash.js"></script>
+  <script src="./deck.js/extensions/menu/deck.menu.js"></script>
+  <script src="./deck.js/extensions/goto/deck.goto.js"></script>
+  <script src="./deck.js/extensions/status/deck.status.js"></script>
+  <script src="./deck.js/extensions/navigation/deck.navigation.js"></script>
+  <script src="./deck.js/extensions/scale/deck.scale.js"></script>
+  <!-- Initialize the deck -->
+  <script>
+    $(function() {
+      $.deck('.slide');
+    });
+  </script>
+</body>
+
+</html>
